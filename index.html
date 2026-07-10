@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn Werkende VS Code Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigatiebalk -->
+    <nav class="navbar">
+        <div class="logo">MijnWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Functies</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Sectie -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welkom op mijn website</h1>
+            <p>Gebouwd met HTML, CSS en JavaScript. Volledig klaar voor VS Code!</p>
+            <a href="#contact" class="btn">Stuur een E-mail</a>
+        </div>
+    </header>
+
+    <!-- Features Sectie -->
+    <section id="features" class="features-section">
+        <h2>Wat bieden wij?</h2>
+        <div class="cards-container">
+            <div class="card">
+                <h3>E-mail Integratie</h3>
+                <p>Ontvang berichten rechtstreeks in je inbox via een veilige backend-koppeling.</p>
+            </div>
+            <div class="card">
+                <h3>Geen Server Nodig</h3>
+                <p>Dankzij Formspree heb je geen ingewikkelde PHP of Node.js servers nodig.</p>
+            </div>
+            <div class="card">
+                <h3>Live Validatie</h3>
+                <p>JavaScript controleert direct of de invoer klopt voordat de mail verstuurd wordt.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sectie met jouw live Formspree Endpoint -->
+    <section id="contact" class="contact-section">
+        <h2>Neem Contact Op</h2>
+        <p class="section-desc">Vul het formulier in en test het zelf. Het bericht komt nu direct in jóuw mailbox aan!</p>
+        
+        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xzdlnkbk" method="POST">
+            <div class="form-group">
+                <label for="name">Naam:</label>
+                <input type="text" name="name" id="name" required placeholder="Jouw naam">
+            </div>
+            <div class="form-group">
+                <label for="email">E-mailadres:</label>
+                <input type="email" name="_replyto" id="email" required placeholder="jouw@email.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Bericht:</label>
+                <textarea name="message" id="message" required placeholder="Typ hier je bericht..." rows="5"></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn">Verstuur Bericht</button>
+        </form>
+        <div id="formFeedback" class="feedback-message"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
