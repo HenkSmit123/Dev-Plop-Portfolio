@@ -3,71 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mijn Werkende VS Code Website</title>
+    <title>Mijn Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigatiebalk -->
     <nav class="navbar">
-        <div class="logo">MijnWebsite</div>
+        <div class="logo">DevPortfolio</div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#features">Functies</a></li>
+            <li><a href="#projecten">Projecten</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero Sectie -->
+    <!-- Home / Hero Sectie -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Welkom op mijn website</h1>
-            <p>Gebouwd met HTML, CSS en JavaScript. Volledig klaar voor VS Code!</p>
-            <a href="#contact" class="btn">Stuur een E-mail</a>
+            <h1>Hallo, ik ben <span class="highlight">Jouw Naam</span></h1>
+            <p>Welkom op mijn portfolio website. Ik bouw creatieve en strakke websites.</p>
+            <a href="#projecten" class="btn">Bekijk mijn werk</a>
         </div>
     </header>
 
-    <!-- Features Sectie -->
-    <section id="features" class="features-section">
-        <h2>Wat bieden wij?</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>E-mail Integratie</h3>
-                <p>Ontvang berichten rechtstreeks in je inbox via een veilige backend-koppeling.</p>
+    <!-- Projecten Sectie -->
+    <section id="projecten" class="projects-section">
+        <h2>Mijn Projecten</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Project 1</h3>
+                    <p>Dit is een korte omschrijving van je eerste coole website project.</p>
+                    <a href="#" class="project-link">Bekijk Project →</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Geen Server Nodig</h3>
-                <p>Dankzij Formspree heb je geen ingewikkelde PHP of Node.js servers nodig.</p>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Project 2</h3>
+                    <p>Dit is een korte omschrijving van je tweede coole website project.</p>
+                    <a href="#" class="project-link">Bekijk Project →</a>
+                </div>
             </div>
-            <div class="card">
-                <h3>Live Validatie</h3>
-                <p>JavaScript controleert direct of de invoer klopt voordat de mail verstuurd wordt.</p>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Project 3</h3>
+                    <p>Dit is een korte omschrijving van je derde coole website project.</p>
+                    <a href="#" class="project-link">Bekijk Project →</a>
+                </div>
             </div>
+
         </div>
     </section>
 
-    <!-- Contact Sectie met jouw live Formspree Endpoint -->
+    <!-- Contact Sectie -->
     <section id="contact" class="contact-section">
-        <h2>Neem Contact Op</h2>
-        <p class="section-desc">Vul het formulier in en test het zelf. Het bericht komt nu direct in jóuw mailbox aan!</p>
+        <h2>Contact met mij opnemen</h2>
+        <p>Heb je een vraag of wil je samenwerken? Stuur gerust een bericht!</p>
         
-        <form id="contactForm" class="contact-form" action="https://formspree.io/f/xzdlnkbk" method="POST">
-            <div class="form-group">
-                <label for="name">Naam:</label>
-                <input type="text" name="name" id="name" required placeholder="Jouw naam">
-            </div>
-            <div class="form-group">
-                <label for="email">E-mailadres:</label>
-                <input type="email" name="_replyto" id="email" required placeholder="jouw@email.com">
-            </div>
-            <div class="form-group">
-                <label for="message">Bericht:</label>
-                <textarea name="message" id="message" required placeholder="Typ hier je bericht..." rows="5"></textarea>
-            </div>
-            <button type="submit" id="submitBtn" class="btn">Verstuur Bericht</button>
+        <!-- Vervang DE_CODE_VAN_FORMSPREE door je echte Formspree code indien nodig -->
+        <form action="https://formspree.io/f/DE_CODE_VAN_FORMSPREE" method="POST" class="contact-form">
+            <input type="text" name="name" placeholder="Jouw Naam" required>
+            <input type="email" name="email" placeholder="Jouw E-mailadres" required>
+            <textarea name="message" placeholder="Jouw Bericht" rows="5" required></textarea>
+            <button type="submit" class="btn">Verstuur Bericht</button>
         </form>
-        <div id="formFeedback" class="feedback-message"></div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jouw Naam. Alle rechten voorbehouden.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
