@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigatiebalk -->
+    <nav class="navbar">
+        <div class="logo">&lt;DEV/<span class="highlight">PLOP</span>&gt;</div>
+        <ul class="nav-links">
+            <li><a href="#home">// home</a></li>
+            <li><a href="#projecten">// werk</a></li>
+            <li><a href="#contact">// contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home / Hero Sectie -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <div class="terminal-badge">STATUS: AVAILABLE FOR WORK</div>
+            <h1>Bouwen aan de <span class="gradient-text">digitale toekomst</span></h1>
+            <p>Ik ben een gedreven developer gespecialiseerd in het bouwen van strakke, snelle en moderne webapplicaties.</p>
+            <div class="hero-buttons">
+                <a href="#projecten" class="btn btn-primary">Bekijk Projecten</a>
+                <a href="#contact" class="btn btn-secondary">Let's talk</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projecten Sectie -->
+    <section id="projecten" class="projects-section">
+        <div class="section-title">
+            <h2>Featured_Projects</h2>
+            <div class="line"></div>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <div class="project-info">
+                    <h3>Web Applicatie 01</h3>
+                    <p>Een modern platform gebouwd met HTML, CSS en JavaScript met een focus op snelheid en gebruikerservaring.</p>
+                    <div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                    <a href="#" class="project-link">Source Code_</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+                <div class="project-info">
+                    <h3>UI/UX Ontwerp 02</h3>
+                    <p>Een interactief en responsive dashboard ontworpen voor optimale weergave op zowel mobiel als desktop.</p>
+                    <div class="tags"><span>Design</span><span>Responsive</span></div>
+                    <a href="#" class="project-link">Live Demo_</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Sectie -->
+    <section id="contact" class="contact-section">
+        <div class="contact-box">
+            <h2>Connect_With_Me</h2>
+            <p>Interesse in een samenwerking of heb je een vraag? Drop een bericht in de terminal hieronder.</p>
+            
+            <!-- Pas DE_CODE_VAN_FORMSPREE aan naar je eigen Formspree ID -->
+            <form action="https://formspree.io/f/DE_CODE_VAN_FORMSPREE" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Naam / Bedrijf" required>
+                <input type="email" name="email" placeholder="E-mailadres" required>
+                <textarea name="message" placeholder="Typ hier je bericht..." rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Verzend_Bericht()</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>// © 2026 Dev-Plop. Gemaakt met passie voor code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
